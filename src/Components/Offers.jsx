@@ -4,7 +4,7 @@ import { offersCards } from '../Services/NavigationLinks'
 const offers = () => {
   return (
     <section className='min-w-screen'>
-        <div className='px-4 py-3 lg:px-12 lg:py-7 mb-10 grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-4'>
+        <div className='px-4 py-3 lg:px-12 lg:py-7 grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-4'>
             {offersCards.map((item) => (
                 <div key={item.id} className='relative min-h-128 min-w-[90%]'>
                     <div className='absolute inset-0 h-full w-full rounded-md overflow-hidden bg-red-500'>
