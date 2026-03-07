@@ -232,3 +232,20 @@ export const offersCards = [
         image: "/public/Images/offerCardsImage/Homepage-Features-Desktop.avif"
     }
 ]
+
+export const chargeMap = [
+    {
+        id: 1,
+        header: "FIND YOUR CHARGE",
+        title: "View the network of Tesla Superchargers and Destination Chargers available near you.",
+        mainBTN: "View Network",
+        subBTN: "Learn More"
+    },
+    {
+        id: 2,
+        superChargerNum: "8,129",
+        superChargerText: "SuperChargers",
+        destantionChargerNum: "128",
+        destantionChargerText: "Destantional Charges"
+    }
+]
