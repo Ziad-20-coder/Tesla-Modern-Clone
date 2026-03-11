@@ -4,6 +4,7 @@ import Promotions from './Components/Promotions'
 import SnapScrollingcarousel from './Components/SnapScrollingcarousel'
 import Offers from './Components/Offers'
 import Map from './Components/Map'
+import SecCarousel from './Components/SecCarousel'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Promotions />
       <Offers />
       <Map />
+      <SecCarousel />
     </div>
   )
 }
