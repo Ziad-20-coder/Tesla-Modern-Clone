@@ -254,3 +254,38 @@ export const iconsAndItems = [
         image2: "/public/Images/mapImages/download (1).svg"
     }
 ]
+
+export const secondCarouselItems = [
+    {
+        id: 1,
+        header: "Solar Panels",
+        title: "Power Your Home and Reduce Your Electricity Bill",
+        mainBTN: "Order Now",
+        subBTN: "Learn More",
+        image: "/public/Images/sec carousel Images/Homepage-Card-Solar-Roof-Desktop-v2.avif"
+    },
+    {
+        id: 2,
+        header: "Powerwall",
+        title: "Keep Your Lights On During Outages",
+        mainBTN: "Order Now",
+        subBTN: "Learn More",
+        image: "/public/Images/sec carousel Images/Homepage-Card-Powerwall-Desktop.avif"
+    },
+    {
+        id: 3,
+        header: "Megapack",
+        title: "Massive Batteries for Massive Energy Support",
+        mainBTN: "",
+        subBTN: "Learn More",
+        image: "/public/Images/sec carousel Images/Homepage-Card-Megapack-Desktop-v2.avif"
+    },
+    {
+        id: 4,
+        header: "Solar Roof",
+        title: "Generate Clean Energy With Your Roof",
+        mainBTN: "Order Now",
+        subBTN: "Learn More",
+        image: "/public/Images/sec carousel Images/Homepage-Card-Solar-Panels-Desktop-v2.avif"
+    }
+]
