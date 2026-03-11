@@ -239,13 +239,18 @@ export const chargeMap = [
         header: "FIND YOUR CHARGE",
         title: "View the network of Tesla Superchargers and Destination Chargers available near you.",
         mainBTN: "View Network",
-        subBTN: "Learn More"
-    },
+        subBTN: "Learn More",
+    }
+]
+
+export const iconsAndItems = [
     {
-        id: 2,
+        id: 1,
         superChargerNum: "8,129",
         superChargerText: "SuperChargers",
         destantionChargerNum: "128",
-        destantionChargerText: "Destantional Charges"
+        destantionChargerText: "Destantional Charges",
+        image1: "/public/Images/mapImages/download.svg",
+        image2: "/public/Images/mapImages/download (1).svg"
     }
 ]
