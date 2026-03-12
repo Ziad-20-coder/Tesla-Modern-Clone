@@ -19,9 +19,6 @@ const snapScrollingcarousel = () => {
 
             let gap = parseInt(window.getComputedStyle(container).gap || 0);
 
-            console.log(cardWidth)
-            console.log(gap)
-
             const distance = cardWidth + gap
 
             console.log(distance)
@@ -56,6 +53,8 @@ const snapScrollingcarousel = () => {
         if(container) {
             let scrollLeft = container.scrollLeft;
 
+            console.log(scrollLeft)
+
             const card = container.firstElementChild
 
             if(card) {
@@ -66,8 +65,6 @@ const snapScrollingcarousel = () => {
                 const totalWidth = cardWidth + gap;
                 
                 const newIndex = Math.round(scrollLeft / totalWidth)
-                
-                console.log(newIndex)
 
                 if(newIndex !== isActive) {
                     setIsActive(() => newIndex)
