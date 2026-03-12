@@ -5,6 +5,7 @@ import SnapScrollingcarousel from './Components/SnapScrollingcarousel'
 import Offers from './Components/Offers'
 import Map from './Components/Map'
 import SecCarousel from './Components/SecCarousel'
+import EndOfWebsiteLinks from './Components/EndOfWebsiteLinks'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Offers />
       <Map />
       <SecCarousel />
+      <EndOfWebsiteLinks />
     </div>
   )
 }

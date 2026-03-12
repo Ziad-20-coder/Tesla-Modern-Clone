@@ -289,3 +289,26 @@ export const secondCarouselItems = [
         image: "/public/Images/sec carousel Images/Homepage-Card-Solar-Panels-Desktop-v2.avif"
     }
 ]
+
+export const endLinks = [
+    {
+        id: 1,
+        link: "tesla&copy;2026"
+    },
+    {
+        id: 2,
+        link: "Privacy & Legal"
+    },
+    {
+        id: 3,
+        link: "Vehicle Recalls"
+    },
+    {
+        id: 4,
+        link: "News"
+    },
+    {
+        id: 5,
+        link: "News"
+    }
+]
