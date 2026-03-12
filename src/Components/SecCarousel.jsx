@@ -1,5 +1,6 @@
 import {useRef, useState} from 'react'
 import { secondCarouselItems } from '../Services/NavigationLinks'
+import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
 
 const secCarousel = () => {
     const scrollRef = useRef(null)
@@ -44,9 +45,27 @@ const secCarousel = () => {
             behavior: "smooth"
         })
     }
+
+    const switchBTNS = (direction) => {
+
+        const container = scrollRef.current
+
+        if(!container) return
+
+        const cardWidth = container.firstElementChild.offsetWidth
+
+        const gap = parseInt(window.getComputedStyle(container).gap) || 0
+
+        const totalWidth = cardWidth + gap
+
+        container.scrollBy({
+            left: direction === "next" ? totalWidth : -totalWidth,
+            behavior: "smooth"
+        })
+    }
   return (
-    <div className='min-w-screen'>
-        <div ref={scrollRef} onScroll={handleSwipe} className='min-w-full px-4 py-3 lg:px-12 lg:py-7 mt-0 flex items-center gap-3 overflow-x-auto snap-x snap-mandatory no-scrollbar'>
+    <div className='relative min-w-screen'>
+        <div ref={scrollRef} onScroll={handleSwipe} className='min-w-full px-4 py-3 lg:px-12 lg:py-7 mt-0 flex items-center gap-3 lg:gap-8 overflow-x-auto snap-x snap-mandatory no-scrollbar'>
             {secondCarouselItems.map((item) => (
                 <div key={item.id} className='relative min-h-130 min-w-82.5 md:min-w-170 lg:min-w-247.5 snap-center'>
                     <img src={item.image} alt={item.title} className='absolute h-full w-full object-cover rounded-md'/>
@@ -60,6 +79,16 @@ const secCarousel = () => {
                     </div>
                 </div>
             ))}
+        </div>
+        <div className='absolute top-1/2 hidden lg:block min-w-full px-4 py-3 lg:px-12 lg:py-7'>
+            <div className='flex items-center justify-between'>
+                <button onClick={() => switchBTNS("prev")} className='p-2 text-2xl bg-gray-200 rounded-md cursor-pointer'>
+                    <GrFormPreviousLink />
+                </button>
+                <button onClick={() => switchBTNS("next")} className='p-2 text-2xl bg-gray-200 rounded-md cursor-pointer'>
+                    <GrFormNextLink />
+                </button>
+            </div>
         </div>
         <div className='min-w-full mt-4 flex items-center justify-center gap-3'>
             {secondCarouselItems.map((item) => (
