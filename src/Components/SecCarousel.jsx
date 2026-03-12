@@ -1,10 +1,52 @@
-import React from 'react'
+import {useRef, useState} from 'react'
 import { secondCarouselItems } from '../Services/NavigationLinks'
 
 const secCarousel = () => {
+    const scrollRef = useRef(null)
+
+    const [activeIndex, setActiveIndex] = useState(0)
+
+    const handleSwipe = () => {
+        const container = scrollRef.current;
+
+        if(!container) return
+
+        const scrollLeft = container.scrollLeft
+
+        const cardWidth = container.firstElementChild.offsetWidth
+
+        const gap = parseInt(window.getComputedStyle(container).gap || 0)
+
+        const totalWidth = cardWidth + gap;
+
+        const newIndex = Math.round(scrollLeft / totalWidth)
+
+        console.log(newIndex)
+
+        if(activeIndex !== newIndex) {
+            setActiveIndex(() => newIndex)
+        }
+    }
+    const scrollToDot = (dotIndex) => {
+
+        const container = scrollRef.current;
+
+        if(!container) return
+
+        const cardWidth = container.firstElementChild.offsetWidth
+
+        const gap = parseInt(window.getComputedStyle(container).gap || 0)
+
+        const totalWidth = cardWidth + gap;
+
+        container.scrollTo({
+            left: totalWidth * dotIndex,
+            behavior: "smooth"
+        })
+    }
   return (
     <div className='min-w-screen'>
-        <div className='min-w-full px-4 py-3 lg:px-12 lg:py-7 mt-5 flex items-center gap-3 overflow-x-auto snap-x snap-mandatory'>
+        <div ref={scrollRef} onScroll={handleSwipe} className='min-w-full px-4 py-3 lg:px-12 lg:py-7 mt-0 flex items-center gap-3 overflow-x-auto snap-x snap-mandatory no-scrollbar'>
             {secondCarouselItems.map((item) => (
                 <div key={item.id} className='relative min-h-130 min-w-82.5 md:min-w-170 lg:min-w-247.5 snap-center'>
                     <img src={item.image} alt={item.title} className='absolute h-full w-full object-cover rounded-md'/>
@@ -17,6 +59,11 @@ const secCarousel = () => {
                         </div>
                     </div>
                 </div>
+            ))}
+        </div>
+        <div className='min-w-full mt-4 flex items-center justify-center gap-3'>
+            {secondCarouselItems.map((item) => (
+                <button key={item.id} onClick={() => scrollToDot(item.id - 1)} className={`h-3 ${activeIndex === item.id - 1 ? "bg-black w-8" : "bg-gray-300 w-2"} rounded-full transition-all duration-150 cursor-pointer`}></button>
             ))}
         </div>
     </div>

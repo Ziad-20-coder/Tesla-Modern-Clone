@@ -19,9 +19,6 @@ const snapScrollingcarousel = () => {
 
             let gap = parseInt(window.getComputedStyle(container).gap || 0);
 
-            console.log(cardWidth)
-            console.log(gap)
-
             const distance = cardWidth + gap
 
             console.log(distance)
