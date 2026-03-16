@@ -157,7 +157,7 @@ export const snapCarousel = [
         tag: "Sport Sedan",
         mainBTN: "Order Now",
         subBTN: "Learn More",
-        image: "/public/Images/snapScrollImages/Homepage-Card-Model-3-Desktop-US_PR_MX.avif"
+        image: "/Images/snapScrollImages/Homepage-Card-Model-3-Desktop-US_PR_MX.avif"
     },
     {
         id: 2,
@@ -166,7 +166,7 @@ export const snapCarousel = [
         tag: "Midsize SUV",
         mainBTN: "Order Now",
         subBTN: "Learn More",
-        image: "/public/Images/snapScrollImages/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.avif"
+        image: "/Images/snapScrollImages/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.avif"
     },
     {
         id: 3,
@@ -175,7 +175,7 @@ export const snapCarousel = [
         tag: "Luxury SUV",
         mainBTN: "Order Now",
         subBTN: "Learn More",
-        image: "/public/Images/snapScrollImages/Homepage-Card-Model-X-Desktop-US_PR_MX.avif"
+        image: "/Images/snapScrollImages/Homepage-Card-Model-X-Desktop-US_PR_MX.avif"
     },
     {
         id: 4,
@@ -184,7 +184,7 @@ export const snapCarousel = [
         tag: "Luxury Sedan",
         mainBTN: "Order Now",
         subBTN: "Learn More",
-        image: "/public/Images/snapScrollImages/Homepage-Card-Model-S-Desktop-US-v3.avif"
+        image: "/Images/snapScrollImages/Homepage-Card-Model-S-Desktop-US-v3.avif"
     },
     {
         id: 5,
@@ -193,7 +193,7 @@ export const snapCarousel = [
         tag: "Utility Truck",
         mainBTN: "Order Now",
         subBTN: "Learn More",
-        image: "/public/Images/snapScrollImages/Homepage-Card-Cybertruck-Desktop-US_PR_MX.avif"
+        image: "/Images/snapScrollImages/Homepage-Card-Cybertruck-Desktop-US_PR_MX.avif"
     }
 ]
 
@@ -203,14 +203,14 @@ export const promotionCards = [
         header: "Current Offers",
         title: "Explore limited-time offers on Tesla vehicles.",
         BTN: "Learn More",
-        image: "/public/Images/cardsImages/Homepage-Grid-Current-Offers.avif"
+        image: "/Images/cardsImages/Homepage-Grid-Current-Offers.avif"
     },
     {
         id: 2,
         header: "American Heroes",
         title: "$500 off for military, first responders, healthcare, teachers and students.",
         BTN: "Learn More",
-        image: "/public/Images/cardsImages/Homepage-Grid-American-Heroes-v2.avif"
+        image: "/Images/cardsImages/Homepage-Grid-American-Heroes-v2.avif"
     }
 ]
 
@@ -221,7 +221,7 @@ export const offersCards = [
         title: "Full Self-Driving (Supervised)",
         mainBTN: "Demo FSD (Supervised)",
         subBTN: "Learn More",
-        image: "/public/Images/offerCardsImage/Homepage-FSD-Safety-Report-Split-Desktop.avif"
+        image: "/Images/offerCardsImage/Homepage-FSD-Safety-Report-Split-Desktop.avif"
     },
     {
         id: 2,
@@ -229,7 +229,7 @@ export const offersCards = [
         title: "",
         mainBTN: "Discover",
         subBtn: "",
-        image: "/public/Images/offerCardsImage/Homepage-Features-Desktop.avif"
+        image: "/Images/offerCardsImage/Homepage-Features-Desktop.avif"
     }
 ]
 
@@ -250,8 +250,8 @@ export const iconsAndItems = [
         superChargerText: "SuperChargers",
         destantionChargerNum: "128",
         destantionChargerText: "Destantional Charges",
-        image1: "/public/Images/mapImages/download.svg",
-        image2: "/public/Images/mapImages/download (1).svg"
+        image1: "/Images/mapImages/download.svg",
+        image2: "/Images/mapImages/download (1).svg"
     }
 ]
 
@@ -262,7 +262,7 @@ export const secondCarouselItems = [
         title: "Power Your Home and Reduce Your Electricity Bill",
         mainBTN: "Order Now",
         subBTN: "Learn More",
-        image: "/public/Images/sec carousel Images/Homepage-Card-Solar-Roof-Desktop-v2.avif"
+        image: "/Images/sec carousel Images/Homepage-Card-Solar-Roof-Desktop-v2.avif"
     },
     {
         id: 2,
@@ -270,7 +270,7 @@ export const secondCarouselItems = [
         title: "Keep Your Lights On During Outages",
         mainBTN: "Order Now",
         subBTN: "Learn More",
-        image: "/public/Images/sec carousel Images/Homepage-Card-Powerwall-Desktop.avif"
+        image: "/Images/sec carousel Images/Homepage-Card-Powerwall-Desktop.avif"
     },
     {
         id: 3,
@@ -278,7 +278,7 @@ export const secondCarouselItems = [
         title: "Massive Batteries for Massive Energy Support",
         mainBTN: "",
         subBTN: "Learn More",
-        image: "/public/Images/sec carousel Images/Homepage-Card-Megapack-Desktop-v2.avif"
+        image: "/Images/sec carousel Images/Homepage-Card-Megapack-Desktop-v2.avif"
     },
     {
         id: 4,
@@ -286,7 +286,7 @@ export const secondCarouselItems = [
         title: "Generate Clean Energy With Your Roof",
         mainBTN: "Order Now",
         subBTN: "Learn More",
-        image: "/public/Images/sec carousel Images/Homepage-Card-Solar-Panels-Desktop-v2.avif"
+        image: "/Images/sec carousel Images/Homepage-Card-Solar-Panels-Desktop-v2.avif"
     }
 ]
 
