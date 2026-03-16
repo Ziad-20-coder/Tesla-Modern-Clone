@@ -31,71 +31,71 @@ export const megaContent = {
         {
             id: 1,
             title: "Model S", 
-            image: "/src/assets/Mega-Menu-Vehicles-Model-S-New-NA-TW-KR.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Vehicles-Model-S-New-NA-TW-KR.avif"
             },
         {
             id: 2,
             title: "Model 3",
-            image: "/src/assets/Mega-Menu-Vehicles-Model-3-Performance-LHD.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Vehicles-Model-3-Performance-LHD.avif"
         },
         {
             id: 3,
             title: "Model X",
-            image: "/src/assets/Mega-Menu-Vehicles-Model-X-New.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Vehicles-Model-X-New.avif"
         },
         {
             id: 4,
             title: "Model Y",
-            image: "/src/assets/Mega-Menu-Vehicles-Model-Y-2-v3.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Vehicles-Model-Y-2-v3.avif"
         },
         {
             id: 5,
             title: "CyberTruck",
-            image: "/src/assets/Mega-Menu-Vehicles-Cybertruck-1x.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Vehicles-Cybertruck-1x.avif"
         }
     ],
     "Energy": [
         {
             id: 1,
             title: "Solar Panels",
-            image: "/src/assets/Mega-Menu-Energy-Solar-Panels.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Energy-Solar-Panels.avif"
         },
         {
             id: 2,
             title: "Soalr Roofs",
-            image: "/src/assets/Mega-Menu-Energy-Solar-Roof.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Energy-Solar-Roof.avif"
         },
         {
             id: 3,
             title: "Power Wall",
-            image: "/src/assets/Mega-Menu-Energy-Powerwall-US.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Energy-Powerwall-US.avif"
         },
         {
             id: 4,
             title: "Mega Pack",
-            image: "/src/assets/Mega-Menu-Energy-Megapack.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Energy-Megapack.avif"
         }
     ],
     "Charging": [
         {
             id: 1,
             title: "Charging",
-            image: "/src/assets/Mega-Menu-Charging-Charging.avif"
+            image: "/Images/NavigationImages//Mega-Menu-Charging-Charging.avif"
         },
         {
             id: 2,
             title: "Home Charging",
-            image: "/src/assets/Mega-Menu-Charging-Home-Charging.avif"
+            image: "Images/NavigationImages/Mega-Menu-Charging-Home-Charging.avif"
         },
         {
             id: 3,
             title: "Super Charging",
-            image: "/src/assets/Mega-Menu-Charging-Supercharging-NA.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Charging-Supercharging-NA.avif"
         },
         {
             id: 4,
             title: "Super Charger For Business",
-            image: "/src/assets/Mega-Menu-Charging-Supercharger-For-Business.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Charging-Supercharger-For-Business.avif"
         }
     ],
     "Shop": [
@@ -107,17 +107,17 @@ export const megaContent = {
         {
             id: 2,
             title: "Vehicle Accessories",
-            image: "/src/assets/Mega-Menu-Shop-Vehicle-Accessories.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Shop-Vehicle-Accessories.avif"
         },
         {
             id: 3,
             title: "Apparel",
-            image: "/src/assets/Mega-Menu-Shop-Apparel.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Shop-Apparel.avif"
         },
         {
             id: 4,
             title: "Life Style",
-            image: "/src/assets/Mega-Menu-Shop-Lifestyle.avif"
+            image: "/Images/NavigationImages/Mega-Menu-Shop-Lifestyle.avif"
         }
     ]
 }
