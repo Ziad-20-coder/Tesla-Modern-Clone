@@ -4,7 +4,7 @@ type linksType = {
     link: string
 }
 
-export const links: linksType[] = [
+export const links: readonly linksType[] = [
     {
         id: 1,
         title: "Vehicles",
@@ -147,7 +147,7 @@ type heroDataType = {
     content: string
 }
 
-export const heroData: heroDataType[] = [
+export const heroData: readonly heroDataType[] = [
     {
         id: 1,
         header: "Full Self-Driving (Supervised)",
@@ -186,7 +186,7 @@ type snapCarouselType = {
     image: string
 }
 
-export const snapCarousel: snapCarouselType[] = [
+export const snapCarousel: readonly snapCarouselType[] = [
     {
         id: 1,
         header: "Model 3",
@@ -241,7 +241,7 @@ type promotionCardsType = {
     image: string
 }
 
-export const promotionCards: promotionCardsType[] = [
+export const promotionCards: readonly promotionCardsType[] = [
     {
         id: 1,
         header: "Current Offers",
@@ -267,7 +267,7 @@ type offersCardsType = {
     image: string
 }
 
-export const offersCards: offersCardsType[] = [
+export const offersCards: readonly offersCardsType[] = [
     {
         id: 1,
         header: "Travel Safer, Arrive Refreshed",
@@ -292,7 +292,7 @@ type chargeMapType = {
     subBTN: string
 }
 
-export const chargeMap: chargeMapType[] = [
+export const chargeMap: readonly chargeMapType[] = [
     {
         id: 1,
         header: "FIND YOUR CHARGE",
@@ -312,7 +312,7 @@ type iconsAndItemsType = {
     image2: string
 }
 
-export const iconsAndItems: iconsAndItemsType[] = [
+export const iconsAndItems: readonly iconsAndItemsType[] = [
     {
         id: 1,
         superChargerNum: "8,129",
@@ -333,7 +333,7 @@ type secondCarouselItemsType = {
     image: string
 }
 
-export const secondCarouselItems: secondCarouselItemsType[] = [
+export const secondCarouselItems: readonly secondCarouselItemsType[] = [
     {
         id: 1,
         header: "Solar Panels",
@@ -372,7 +372,7 @@ type footerType = {
     link: string
 }
 
-export const footer: footerType[] = [
+export const footer: readonly footerType[] = [
     {
         id: 1,
         link: "tesla&copy;2026"
