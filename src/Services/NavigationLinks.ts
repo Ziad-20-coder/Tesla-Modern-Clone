@@ -1,4 +1,10 @@
-export const links = [
+type linksType = {
+    id: number
+    title: string
+    link: string
+}
+
+export const links: readonly linksType[] = [
     {
         id: 1,
         title: "Vehicles",
@@ -26,7 +32,17 @@ export const links = [
     }
 ]
 
-export const megaContent = {
+type megaKeyType = "Vehicles" | "Energy" | "Charging" | "Shop"
+
+type megaValueType = {
+    id: number
+    title: string
+    image: string
+}
+
+type megaContentType = Record<megaKeyType, megaValueType[]>
+
+export const megaContent: megaContentType = {
     "Vehicles": [
         {
             id: 1,
@@ -122,7 +138,16 @@ export const megaContent = {
     ]
 }
 
-export const heroData = [
+type heroDataType = {
+    id: number
+    header: string
+    subHeader: string
+    mainBTN: string
+    subBTN: string
+    content: string
+}
+
+export const heroData: readonly heroDataType[] = [
     {
         id: 1,
         header: "Full Self-Driving (Supervised)",
@@ -149,11 +174,22 @@ export const heroData = [
     }
 ]
 
-export const snapCarousel = [
+type snapCarouselBTNType = "Order Now" | "Learn More"
+
+type snapCarouselType = {
+    id: number
+    header: string
+    pLink?: string
+    tag: string
+    mainBTN: snapCarouselBTNType
+    subBTN: snapCarouselBTNType
+    image: string
+}
+
+export const snapCarousel: readonly snapCarouselType[] = [
     {
         id: 1,
         header: "Model 3",
-        pLink: "",
         tag: "Sport Sedan",
         mainBTN: "Order Now",
         subBTN: "Learn More",
@@ -197,7 +233,15 @@ export const snapCarousel = [
     }
 ]
 
-export const promotionCards = [
+type promotionCardsType = {
+    id: number
+    header: string
+    title: string
+    BTN: "Learn More"
+    image: string
+}
+
+export const promotionCards: readonly promotionCardsType[] = [
     {
         id: 1,
         header: "Current Offers",
@@ -214,7 +258,16 @@ export const promotionCards = [
     }
 ]
 
-export const offersCards = [
+type offersCardsType = {
+    id: number
+    header: string
+    title?: string
+    mainBTN: string
+    subBTN?: string
+    image: string
+}
+
+export const offersCards: readonly offersCardsType[] = [
     {
         id: 1,
         header: "Travel Safer, Arrive Refreshed",
@@ -226,14 +279,20 @@ export const offersCards = [
     {
         id: 2,
         header: "Features That Come Standard",
-        title: "",
         mainBTN: "Discover",
-        subBtn: "",
         image: "/Images/offerCardsImage/Homepage-Features-Desktop.avif"
     }
 ]
 
-export const chargeMap = [
+type chargeMapType = {
+    id: number
+    header: string
+    title: string
+    mainBTN: string
+    subBTN: string
+}
+
+export const chargeMap: readonly chargeMapType[] = [
     {
         id: 1,
         header: "FIND YOUR CHARGE",
@@ -243,7 +302,17 @@ export const chargeMap = [
     }
 ]
 
-export const iconsAndItems = [
+type iconsAndItemsType = {
+    id: number
+    superChargerNum: string
+    superChargerText: string
+    destantionChargerNum: string
+    destantionChargerText: string
+    image1: string
+    image2: string
+}
+
+export const iconsAndItems: readonly iconsAndItemsType[] = [
     {
         id: 1,
         superChargerNum: "8,129",
@@ -255,7 +324,16 @@ export const iconsAndItems = [
     }
 ]
 
-export const secondCarouselItems = [
+type secondCarouselItemsType = {
+    id: number
+    header: "Solar Panels" | "Powerwall" | "Megapack" | "Solar Roof"
+    title: string
+    mainBTN?: snapCarouselBTNType
+    subBTN: snapCarouselBTNType
+    image: string
+}
+
+export const secondCarouselItems: readonly secondCarouselItemsType[] = [
     {
         id: 1,
         header: "Solar Panels",
@@ -276,7 +354,6 @@ export const secondCarouselItems = [
         id: 3,
         header: "Megapack",
         title: "Massive Batteries for Massive Energy Support",
-        mainBTN: "",
         subBTN: "Learn More",
         image: "/Images/sec carousel Images/Homepage-Card-Megapack-Desktop-v2.avif"
     },
@@ -290,7 +367,12 @@ export const secondCarouselItems = [
     }
 ]
 
-export const endLinks = [
+type footerType = {
+    id: number
+    link: string
+}
+
+export const footer: readonly footerType[] = [
     {
         id: 1,
         link: "tesla&copy;2026"
